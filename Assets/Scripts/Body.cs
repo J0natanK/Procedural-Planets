@@ -42,8 +42,9 @@ public class Body
 		{
 			foreach (var moon in moons)
 			{
-				//moon.velocity += CalculateAcceleration(moon.position, moon.mass, position, mass) * timeStep;
+				moon.velocity += CalculateAcceleration(moon.position, moon.mass, position, mass) * timeStep;
 				moon.velocity += CalculateAcceleration(moon.position, moon.mass, Vector2.zero, Manager.sunMass) * timeStep;
+				velocity += CalculateAcceleration(position, mass, moon.position, moon.mass) * timeStep;
 			}
 			foreach (var moon in moons)
 			{

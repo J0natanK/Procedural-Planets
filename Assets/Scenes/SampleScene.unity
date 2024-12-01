@@ -409,8 +409,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numBodies: 5
   seed: 0
-  minDistToSun: 10
-  maxDistToSun: 40
+  timeScale: 1
+  maxMoonsPerPlanet: 3
+  minPlanetDstFromSun: 10
+  maxPlanetDstFromSun: 30
+  moonDstMultiplier: 2.2
 --- !u!4 &755637307
 Transform:
   m_ObjectHideFlags: 0
